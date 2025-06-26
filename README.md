@@ -19,7 +19,6 @@ This pipeline identifies, extracts, aligns, and constructs a phylogenetic tree f
 - [Output Files](#output-files)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
-- [Notes for GitHub](#notes-for-github)
 
 ---
 
@@ -418,25 +417,3 @@ This pipeline is provided under the MIT License. See [LICENSE](LICENSE) for deta
 
 ---
 
-## Notes for GitHub
-
-- **Repository Setup:**  
-  - Create a GitHub repository (e.g., `fae1-analysis`).
-  - Add this README as `README.md`.
-  - Include the scripts (`step1_extract_consensus_with_strand.sh`, `step2_combine_sequences.sh`, `step3_align_and_tree.sh`, `visualize_tree.R`) in the repository.
-  - Optionally, upload `fae1_coordinates.bed` and `fae1_coordinates_original.bed` as examples.
-- **Sensitive Data:**  
-  - Do **not** upload BAM, VCF, or reference FASTA files unless they are public, as they may contain sensitive genomic data.
-- **Usage Instructions:**  
-  - Users should adjust file paths (e.g., `B_RAPA_REF`, `B_OLERACEA_REF`) to their local setup.
-  - Ensure Conda environment `align_env` is set up with required tools.
-- **Need help?**  
-  - If you need help setting up the repository, uploading files, or adding a license, let me know!
-  - You can also share outputs like:
-    ```bash
-    head -n 20 fae1_analysis/all_fae1_sequences_aligned.fasta
-    cat fae1_analysis/fae1_phylogenetic_tree.nwk
-    ```
-    to confirm the final results, or get further assistance with visualization or analysis.
-
----
